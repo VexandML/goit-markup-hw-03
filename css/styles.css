@@ -109,7 +109,7 @@ img {
 
 .link-primary, .link-primary-current {
   display: flex;
-  padding: 32px;
+  padding: 32px 0;
 }
 
 .link-primary-current {
@@ -229,7 +229,9 @@ img {
   display: flex;
   gap: 30px;
   margin: 0;
-  padding: 94px 0px 94px 0px;
+}
+
+.feat-list-text {
   flex-basis: calc((100% - 90px) / 4);
 }
 
@@ -244,7 +246,7 @@ img {
 
 /* Секція 3 (Чим ми займаємося) */
 .section-title-whatwedo {
-  padding-bottom: 94px;
+  margin-bottom: 50px;
 }
 
 .section-title-hidden {
@@ -294,10 +296,6 @@ img {
   padding: 30px 0;
 }
 
-.photo{
-  margin-bottom: 30px;
-}
-
 .team-list {
   background-color: var(--color-bcg-primary);
   flex-basis: calc((100% - 90px) / 4 );
@@ -318,7 +316,6 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-align: center;
-  margin-bottom: 30px;
 }
 
 /* Footer */
@@ -347,7 +344,6 @@ img {
   text-decoration: none;
   letter-spacing: 0.03em;
   padding: 0;
-  margin-bottom: 9px;
 }
 
 .foot-contacts-link {
@@ -357,7 +353,6 @@ img {
   line-height: 1.71;
   text-decoration: none;
   letter-spacing: 0.03em;
-  margin-bottom: 9px;
 }
 
 .foot-contacts-link:last-child {
@@ -372,8 +367,12 @@ img {
 
 .footer-link {
   list-style: none;
-  margin-bottom: 60px;
   padding: 0;
+  margin: 0;
+}
+
+.foot-link-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 /* Портфоліо */
@@ -394,7 +393,6 @@ img {
 
 .filter-item{
   display: flex;
-  margin-bottom: 56px;
 }
 
 .button-filter {
